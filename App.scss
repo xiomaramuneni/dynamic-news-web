@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.app-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100dvh;
+}
+main {
+    background-color: rgb(49, 48, 48);
+    color: white;
+    padding: 2em;
+}
+main .home .breaking-news-container  {
+    justify-content: center;
+    gap: 1em;
+    width: 100%;
+}
+main .home .breaking-news-container .breaking-news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1em;
+    height: 30em;
+}
+main .home .breaking-news-container .breaking-news span {
+    font-weight: bolder;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0.5em 1em;
+    display: -webkit-box;
+    -webkit-line-clamp:1;
+    line-clamp: 1;
+    width: 100%;
+    -webkit-box-orient: vertical;  
+}
+main .home .breaking-news-container .breaking-news .img-container{
+    width: 100%;
+    height: 28;
+}
+main .home .breaking-news-container .breaking-news .img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+main .home .breaking-news-container .headline-container {
+    width: 40%;
+    max-height: 30em;
+}
+main .home .breaking-news-container .headline-container .headlines .img-container{
+    width: 80%;
+    height: 10em;
+}
+main .home .breaking-news-container .headline-container .headlines .img-container img{
+    width: 100;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+main .home .breaking-news-container .headline-container h2 {
+    font-weight: bold;
+}
+main .home .breaking-news-container .headline-container .headlines{
+    border: 1px solid white;
+    padding: 1em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 25em;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    
+}
+main .home .breaking-news-container .headline-container .headlines::-webkit-scrollbar 
+{ 
+    width: 5px;
+ }
+main .home>:not(:first-child) h2 {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+main .home .breaking-news-container .headline-container .headlines span {
+    font-weight: bolder;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 2em;
+    display: -webkit-box;
+    -webkit-line-clamp:1;
+    line-clamp: 1;
+    width: 100%;
+    -webkit-box-orient: vertical; 
+}
+main .home>:not(:first-child) .news-container {
+    //display: flex;
+    gap: 1em;
+    height: 20em;
+}
+main .home>:not(:first-child) .news-container .slick-slide > div {
+    margin: 0 10px;
+}
+main .home>:not(:first-child) .news-container .news-card {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    width: 20em;
+    border-radius: 8px;
+}
+main .home>:not(:first-child) .news-container .news-card :not(:hover) {
+    opacity: 0.9;
+}
+main .home>:not(:first-child) .news-container .news-card .img-container{
+    width: 100%;
+    height: 18em;
+    overflow: hidden;
+}
+main .home>:not(:first-child) .news-container .news-card .img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+main .home>:not(:first-child) .news-container .news-card span{
+    font-weight: bolder;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 2em;
+    display: -webkit-box;
+    -webkit-line-clamp:1;
+    line-clamp: 1;
+    width: 100%;
+    -webkit-box-orient: vertical;  
+    
+}
+main .news-article {
+    width: 100%;
+
+}
+main .news-article section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+main .news-article section .image-container{
+    width: 60%;
+    height: 30em;
+
+}
+main .news-article section .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+main .news-article section pre {
+    width: 100;
+    white-space: pre-wrap;
+}
+main .news-article section .content  {
+    width: 60%;
+    padding: 2em 1em;
+}
+main .news-article section .content  span {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+main .news-article section .content  p {
+    line-height: 1.5em;
+}
+main .news-article section .content  small {
+    color: wheat;
+}

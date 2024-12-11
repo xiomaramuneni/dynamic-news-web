@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+header {
+    width: 100dvw;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+header h1 a {
+    text-decoration: none;
+    color: white;
+}
+header nav ul {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    list-style: none;
+}
+header nav ul a {
+    text-decoration: none;
+    color: white;
+    padding: 0 1em;
+    font-weight: bold;
+}
+header nav ul a:hover {
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+    gap: 2em;
+}
+footer span {
+    color: white;
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+footer .container1 {
+    gap: 3em;
+}
+footer .rights {
+    border-top: 1px solid white;
+}
+footer .contact-us {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+footer .contact-us ul {
+    gap: 3em;
+}
+footer .contact-us ul li i {
+    font-size: large;
+    font-weight: bold;
+}
